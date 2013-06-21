@@ -1,9 +1,14 @@
 #!/bin/sh
 
+# install ~/.gitconfig
+if [[ -f ./gitconfig/install ]]; then
+    ./gitconfig/install -f
+fi
 
+# install ~/.vimrc
+cp vimrc ~/.vimrc
 
 if [[ "$SHELL" != "zsh" ]]; then
-
     ZSHRC="$HOME/.zshrc"
 
     echo "ZSH=`pwd`/oh-my-zsh" > $ZSHRC
@@ -11,5 +16,4 @@ if [[ "$SHELL" != "zsh" ]]; then
 
     chsh -s /bin/zsh
 fi
-
 

@@ -1,3 +1,6 @@
 [submodule "oh-my-zsh"]
 	path = oh-my-zsh
 	url = git://github.com/guanqun/oh-my-zsh.git
+[submodule "gitconfig"]
+	path = gitconfig
+	url = git://github.com/guanqun/gitconfig.git
