@@ -1,0 +1,10 @@
+alias v='vim'
+alias g='git'
+
+function bb {
+    if [[ -f BLADE_ROOT ]]; then
+        blade build ...
+    else
+        blade build
+    fi
+}
